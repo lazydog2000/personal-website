@@ -1,17 +1,30 @@
-import { Geist, Geist_Mono, Outfit, Oxanium } from "next/font/google"
+import type { Metadata } from "next"
+import { Cormorant_Garamond, DM_Sans } from "next/font/google"
 
 import "./globals.css"
+
 import { ThemeProvider } from "@/components/theme-provider"
-import { cn } from "@/lib/utils";
 
-const oxaniumHeading = Oxanium({subsets:['latin'],variable:'--font-heading'});
-
-const outfit = Outfit({subsets:['latin'],variable:'--font-sans'})
-
-const fontMono = Geist_Mono({
+const displayFont = Cormorant_Garamond({
   subsets: ["latin"],
-  variable: "--font-mono",
+  variable: "--font-display",
+  weight: ["400", "500", "600", "700"],
+  style: ["normal", "italic"],
+  display: "swap",
 })
+
+const bodyFont = DM_Sans({
+  subsets: ["latin"],
+  variable: "--font-body",
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+})
+
+export const metadata: Metadata = {
+  title: "Mara Velez — Photographer",
+  description:
+    "Mara Velez is a Lisbon-based photographer documenting people, places, and the light between them.",
+}
 
 export default function RootLayout({
   children,
@@ -19,13 +32,15 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html
-      lang="en"
-      suppressHydrationWarning
-      className={cn("antialiased", fontMono.variable, "font-sans", outfit.variable, oxaniumHeading.variable)}
-    >
-      <body>
-        <ThemeProvider>{children}</ThemeProvider>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${bodyFont.variable} ${displayFont.variable}`}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+          enableSystem={false}
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   )

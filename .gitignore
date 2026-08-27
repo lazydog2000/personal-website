@@ -34,3 +34,10 @@ pnpm-debug.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Multica task metadata
+/.agent_context/
+/.multica/
+/.npm-cache/
+/.git-local/
+/AGENTS.md
