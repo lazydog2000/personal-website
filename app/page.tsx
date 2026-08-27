@@ -141,7 +141,7 @@ export default function Page() {
           >
             <span className="grid size-9 place-items-center rounded-full bg-[var(--ink)] text-[var(--paper)]">
               <span className="display-font text-xl leading-none italic">
-                m
+                a
               </span>
             </span>
             <span className="text-[0.67rem] leading-tight font-semibold tracking-[0.18em] text-[var(--ink)] uppercase">
