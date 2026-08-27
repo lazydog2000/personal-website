@@ -18,7 +18,7 @@ const heroImage = {
 const aboutPortrait = {
   image:
     "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1200&q=88",
-  alt: "Portrait of Mara Velez in warm natural light",
+  alt: "Portrait of Alex Morgan in warm natural light",
 }
 
 const projects = [
@@ -137,7 +137,7 @@ export default function Page() {
           <a
             href="#top"
             className="focus-ring inline-flex items-center gap-3"
-            aria-label="Mara Velez home"
+            aria-label="Alex Morgan home"
           >
             <span className="grid size-9 place-items-center rounded-full bg-[var(--ink)] text-[var(--paper)]">
               <span className="display-font text-xl leading-none italic">
@@ -145,7 +145,7 @@ export default function Page() {
               </span>
             </span>
             <span className="text-[0.67rem] leading-tight font-semibold tracking-[0.18em] text-[var(--ink)] uppercase">
-              Mara Velez
+              Alex Morgan
               <span className="block font-normal tracking-[0.12em] text-[var(--muted-foreground)]">
                 Photographer
               </span>
@@ -392,7 +392,7 @@ export default function Page() {
                 Placeholder portrait · replace with your headshot
               </p>
               <p className="absolute bottom-5 left-5 text-[0.65rem] font-semibold tracking-[0.17em] uppercase opacity-80 sm:bottom-7 sm:left-7">
-                Mara / behind the camera
+                Alex / behind the camera
               </p>
             </div>
           </div>
@@ -411,7 +411,7 @@ export default function Page() {
               </h2>
               <div className="mt-10 grid gap-8 text-sm leading-7 text-[var(--paper)]/70 sm:grid-cols-2 sm:gap-12 sm:text-base">
                 <p>
-                  I&apos;m Mara, a photographer based in Lisbon. My work follows
+                  I&apos;m Alex, a photographer based in Lisbon. My work follows
                   the honest, in-between moments — a hand on a doorway, the
                   quiet of a room before everyone arrives, light moving across a
                   face.
@@ -551,10 +551,10 @@ export default function Page() {
                 what you&apos;re drawn to. I&apos;d love to hear it.
               </p>
               <a
-                href="mailto:hello@maravelez.studio"
+                href="mailto:hello@example.com"
                 className="focus-ring group mt-8 flex items-center justify-between border-b border-[var(--paper)]/55 pb-3 text-lg font-medium tracking-[-0.02em] transition-colors hover:border-[var(--paper)] sm:text-xl"
               >
-                <span>hello@maravelez.studio</span>
+                <span>hello@example.com</span>
                 <HugeiconsIcon
                   icon={Mail01Icon}
                   size={21}
@@ -577,7 +577,7 @@ export default function Page() {
         <div className="mx-auto flex w-full max-w-[1440px] flex-col gap-10 px-6 py-10 sm:px-10 lg:flex-row lg:items-end lg:justify-between lg:px-14">
           <div>
             <p className="display-font text-4xl leading-none italic">
-              Mara Velez
+              Alex Morgan
             </p>
             <p className="mt-3 max-w-xs text-xs leading-5 text-[var(--paper)]/55">
               Photographer for people, places, and the light between them.
@@ -639,8 +639,8 @@ export default function Page() {
                 />
               </a>
               <a
-                href="mailto:hello@maravelez.studio"
-                aria-label="Email Mara"
+                href="mailto:hello@example.com"
+                aria-label="Email Alex"
                 className="focus-ring grid size-9 place-items-center rounded-full border border-white/25 transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)]"
               >
                 <HugeiconsIcon
@@ -654,7 +654,7 @@ export default function Page() {
           </div>
         </div>
         <div className="mx-auto flex w-full max-w-[1440px] flex-col gap-2 border-t border-white/15 px-6 py-5 text-[0.6rem] tracking-[0.15em] text-[var(--paper)]/45 uppercase sm:flex-row sm:items-center sm:justify-between sm:px-10 lg:px-14">
-          <span>© 2024 Mara Velez Studio</span>
+          <span>© 2024 Alex Morgan Studio</span>
           <span>Made with intention</span>
         </div>
       </footer>

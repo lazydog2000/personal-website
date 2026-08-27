@@ -21,9 +21,9 @@ const bodyFont = DM_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "Mara Velez — Photographer",
+  title: "Alex Morgan — Photographer",
   description:
-    "Mara Velez is a Lisbon-based photographer documenting people, places, and the light between them.",
+    "Alex Morgan is a Lisbon-based photographer documenting people, places, and the light between them.",
 }
 
 export default function RootLayout({
